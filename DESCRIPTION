@@ -2,7 +2,7 @@ Package: containerit
 Type: Package
 Title: Package R in Docker Containers
 Version: 0.5.0.9004
-Authors@R: c(person("Daniel", "Nuest", role = c("aut", "cre"), email = "daniel.nuest@uni-muenster.de", comment = c(ORCID = "0000-0003-2392-6140")),
+Authors@R: c(person("Daniel", "Nuest", role = c("aut", "cre"), email = "daniel.nuest@uni-muenster.de", comment = c(ORCID = "0000-0002-0024-5046")),
     person("Matthias", "Hinz", role = c("aut"), email = "matthias.m.hinz@gmail.com", comment = c(ORCID = "0000-0001-6837-9406")))
 Author: Daniel Nuest [aut, cre], Matthias Hinz [aut]
 Maintainer: Daniel Nuest <daniel.nuest@uni-muenster.de>
@@ -51,9 +51,8 @@ Suggests:
     fortunes,
     remotes,
     ggplot2,
-    lattice,
-    stevedore
-RoxygenNote: 6.1.0
+    lattice
+RoxygenNote: 6.1.1
 Collate:
     'Class-Instruction.R'
     'Class-Add.R'
