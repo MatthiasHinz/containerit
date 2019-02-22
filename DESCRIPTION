@@ -1,7 +1,7 @@
 Package: containerit
 Type: Package
-Title: Package R in Docker Containers
-Version: 0.5.0.9004
+Title: Package R workflows in Docker containers
+Version: 0.5.0.9005
 Authors@R: c(person("Daniel", "Nuest", role = c("aut", "cre"), email = "daniel.nuest@uni-muenster.de", comment = c(ORCID = "0000-0002-0024-5046")),
     person("Matthias", "Hinz", role = c("aut"), email = "matthias.m.hinz@gmail.com", comment = c(ORCID = "0000-0001-6837-9406")))
 Author: Daniel Nuest [aut, cre], Matthias Hinz [aut]
@@ -24,12 +24,12 @@ Imports:
     versions,
     callr
 VignetteBuilder: knitr
-Description: Package R sessions, scripts, workspaces and vignettes together with
+Description: Package R sessions, scripts, workspaces and R Markdown documents together with
     all dependencies to execute them in Docker containers. This package is supported
     by the project Opening Reproducible Research (https://o2r.info).
 License: GPL-3 + file LICENSE
-URL: https://github.com/o2r/containerit/
-BugReports: https://github.com/o2r/containerit/issues
+URL: https://github.com/o2r-project/containerit/
+BugReports: https://github.com/o2r-project/containerit/issues
 Encoding: UTF-8
 LazyData: TRUE
 Suggests:

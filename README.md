@@ -42,7 +42,7 @@ also available with version tags.
 #### verse
 
 Base image:
-`rocker/verse:3.4.4`
+`rocker/verse:3.5.0`
 
 [![](https://images.microbadger.com/badges/version/o2rproject/containerit.svg)](https://microbadger.com/images/o2rproject/containerit "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/o2rproject/containerit.svg)](https://microbadger.com/images/o2rproject/containerit "Get your own image badge on microbadger.com")
@@ -51,7 +51,7 @@ Base image:
 #### geospatial
 
 Base image:
-`rocker/geospatial:3.4.4`
+`rocker/geospatial:3.5.0`
 
 [![](https://images.microbadger.com/badges/version/o2rproject/containerit:geospatial.svg)](https://microbadger.com/images/o2rproject/containerit:geospatial "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/o2rproject/containerit:geospatial.svg)](https://microbadger.com/images/o2rproject/containerit:geospatial "Get your own image badge on microbadger.com")
@@ -89,6 +89,14 @@ version using the following commands.
 ``` bash
 docker build --tag containerit:dev --file inst/docker/Dockerfile.local .
 docker build --tag containerit:geospatial-dev --file inst/docker/geospatial/Dockerfile.local .
+```
+
+A [codemeta](https://codemeta.github.io/) file, `codemeta.json` with
+metadata about the package and its dependencies is generated
+automatically when this document is compiled.
+
+``` r
+codemetar::write_codemeta("containerit")
 ```
 
 ## License
