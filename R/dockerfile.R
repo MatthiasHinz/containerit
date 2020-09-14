@@ -362,6 +362,11 @@ dockerfileFromSession.sessionInfo <- function(session,
                  stringr::str_detect(pkg$Repository, "(?i)CRAN")) {
                source <- "CRAN"
                version <- pkg$Version
+             } else if ("Repository" %in% names(pkg) &&
+                           stringr::str_detect(pkg$Repository, "(?i)RSPM")) {
+               warning("Found 'RSPM' source for package ", name, " handling it the same CRAN instead.") 
+               source <- "CRAN"
+               version <- pkg$Version
              } else if ("RemoteType" %in% names(pkg) &&
                         stringr::str_detect(pkg$RemoteType, "(?i)github")) {
                source <- "github"
